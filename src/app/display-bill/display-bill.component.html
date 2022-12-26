@@ -1,0 +1,75 @@
+
+
+	<body>
+		<header>
+			<h1>Invoice</h1>
+			<!-- <address contenteditable>
+				<p>Team 7</p>
+				<p>Medical Shop Management</p>
+			</address> -->
+			<!-- <span><img alt="" src="http://www.jonathantneal.com/examples/invoice/logo.png"><input type="file" accept="image/*"></span> -->
+		</header>
+		<article>
+			<h1>Recipient</h1>
+			<address contenteditable>
+				<p>Team 7</p>
+			</address>
+			<table class="meta">
+				<tr>
+					<th><span contenteditable>Invoice #</span></th>
+					<td><span contenteditable>101138</span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable>Date</span></th>
+					<td><span contenteditable>January 1, 2012</span></td>
+                    <th><span contenteditable>Customer Name</span></th>
+					<td><span contenteditable>January 1, 2012</span></td>
+                    <!-- <th><span contenteditable>Phone no.</span></th>
+					<td><span contenteditable>January 1, 2012</span></td>
+                    <th><span contenteditable>Sex</span></th>
+					<td><span contenteditable>January 1, 2012</span></td>
+                    <th><span contenteditable>Age</span></th>
+					<td><span contenteditable>January 1, 2012</span></td> -->
+				</tr>
+				<tr>
+					<th><span contenteditable>Amount Due</span></th>
+					<td><span id="prefix" contenteditable>$</span><span>600.00</span></td>
+				</tr>
+			</table>
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th><span contenteditable>Item</span></th>
+						<th><span contenteditable>Description</span></th>
+                        <th><span contenteditable>Company</span></th>
+						<th><span contenteditable>BatchNo</span></th>
+						<th><span contenteditable>Quantity</span></th>
+						<th><span contenteditable>Rate</span></th>
+					</tr>
+				</thead>
+				<tbody>
+                    <tr *ngFor="let product of productList" class="center-align">
+                      <td>{{ product.productName }}</td>
+                      <td>{{ product.productDescription}}</td>
+                      <td>{{ product.productCompany }}</td>
+                      <td>{{ product.productBatchNo }}</td>
+                      <td>{{ product.productQuantity }}</td>
+                      <td>{{ product.productPrice }}</td>
+                    </tr>
+                  </tbody>
+			</table>
+			<table class="balance">
+				<tr>
+					<th><span contenteditable>Total</span></th>
+					<td><span data-prefix>$</span><span>600.00</span></td>
+				</tr>
+			</table>
+		</article>
+		<aside>
+		</aside>
+	</body>
+
+  <div id="non-print">
+    this is non printing stuff
+    <button (click)="printPage()">print</button>
+  </div>

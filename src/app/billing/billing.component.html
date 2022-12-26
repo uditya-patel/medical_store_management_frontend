@@ -1,0 +1,36 @@
+<form>
+    <p>Please login to your account</p>
+
+    <div class="form-outline mb-4">
+      <input type="text" id="form2Example11" class="form-control"
+        placeholder="" [(ngModel)]="billUserData.customerName" [ngModelOptions]="{standalone: true}" />
+      <label class="form-label" for="form2Example11">Customer Name</label>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="text" id="form2Example22" class="form-control"  [(ngModel)]="billUserData.phoneNo" [ngModelOptions]="{standalone: true}"/>
+      <label class="form-label" for="form2Example22">Phone Number</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input type="text" id="form2Example22" class="form-control"  [(ngModel)]="billUserData.age" [ngModelOptions]="{standalone: true}"/>
+        <label class="form-label" for="form2Example22">Age</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input type="text" id="form2Example22" class="form-control"  [(ngModel)]="billUserData.sex" [ngModelOptions]="{standalone: true}"/>
+        <label class="form-label" for="form2Example22">Sex</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input type="text" id="form2Example22" class="form-control"  [(ngModel)]="billUserData.address" [ngModelOptions]="{standalone: true}"/>
+        <label class="form-label" for="form2Example22">Address</label>
+    </div>
+
+    <div class="text-center pt-1 mb-5 pb-1">
+      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" 
+      (click)="onSubmit()">Submit</button>
+    </div>
+
+  </form>
+
