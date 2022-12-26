@@ -1,0 +1,2 @@
+# medical_store_management_frontend
+Medical Store Management Frontend
